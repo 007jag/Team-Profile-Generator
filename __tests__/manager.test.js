@@ -4,26 +4,26 @@ const Manager = require("../lib/Manager");
 
 describe("Manager subclass", () => {
   describe("getName", () => {
-    it("returns Bob", () => {
-      expect(new Manager("Bob", "1", "bob@bob.com", "13").getName()).toBe("Bob");
+    it("returns jag", () => {
+      expect(new Manager("jag", "1", "jag@jag.com", "13").getName()).toBe("jag");
     });
   });
 
   describe("getId", () => {
     it("returns 1", () => {
-      expect(new Manager("Bob", "1", "bob@bob.com", "13").getId()).toBe("1");
+      expect(new Manager("jag", "1", "jag@jag.com", "13").getId()).toBe("1");
     });
   });
 
   describe("getEmail", () => {
-    it("returns bob@bob.com", () => {
-      expect(new Manager("Bob", "1", "bob@bob.com", "13").getEmail()).toBe("bob@bob.com");
+    it("returns jag@jag.com", () => {
+      expect(new Manager("jag", "1", "jag@jag.com", "13").getEmail()).toBe("jag@jag.com");
     });
   });
 
   describe("getRole", () => {
     it("returns Manager", () => {
-      expect(new Manager("Bob", "1", "bob@bob.com", "13").getRole()).toBe("Manager");
+      expect(new Manager("jag", "1", "jag@jag.com", "13").getRole()).toBe("Manager");
     });
   });
 });

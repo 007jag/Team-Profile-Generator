@@ -4,32 +4,32 @@ const Engineer = require("../lib/Engineer");
 
 describe("Engineer subclass", () => {
   describe("getName", () => {
-    it("returns Bob", () => {
-      expect(new Engineer("Bob", "1", "bob@bob.com", "bobsgithub").getName()).toBe("Bob");
+    it("returns jag", () => {
+      expect(new Engineer("jag", "1", "jag@jag.com", "jagsgithub").getName()).toBe("jag");
     });
   });
 
   describe("getId", () => {
     it("returns 1", () => {
-      expect(new Engineer("Bob", "1", "bob@bob.com", "bobsgithub").getId()).toBe("1");
+      expect(new Engineer("jag", "1", "jag@jag.com", "jagsgithub").getId()).toBe("1");
     });
   });
 
   describe("getEmail", () => {
-    it("returns bob@bob.com", () => {
-      expect(new Engineer("Bob", "1", "bob@bob.com", "bobsgithub").getEmail()).toBe("bob@bob.com");
+    it("returns jag@jag.com", () => {
+      expect(new Engineer("jag", "1", "jag@jag.com", "jagsgithub").getEmail()).toBe("jag@jag.com");
     });
   });
 
   describe("getGithub", () => {
-    it("returns bobsgithub", () => {
-      expect(new Engineer("Bob", "1", "bob@bob.com", "bobsgithub").getGithub()).toBe("bobsgithub");
+    it("returns jagsgithub", () => {
+      expect(new Engineer("jag", "1", "jag@jag.com", "jagsgithub").getGithub()).toBe("jagsgithub");
     });
   });
 
   describe("getRole", () => {
     it("returns Engineer", () => {
-      expect(new Engineer("Bob", "1", "bob@bob.com", "bobsgithub").getRole()).toBe("Engineer");
+      expect(new Engineer("jag", "1", "jag@jag.com", "jagsgithub").getRole()).toBe("Engineer");
     });
   });
 });
