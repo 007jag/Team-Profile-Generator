@@ -7,9 +7,6 @@ const Intern = require("./lib/Intern");
 
 const template = require("./src/template");
 
-// Start HTML generation by invoking node index.js
-
-// The user is prompted for Manager information, then taken to the Options Menu
 const manager = [];
 var newManager;
 const managerQuestions = [
@@ -45,7 +42,6 @@ function managerAsk() {
 
 managerAsk();
 
-// Within the Options Menu, the user can add information for engineer(s) and intern(s) before exiting/generating the HTML file
 const optionsMenu = [
     {
         type: "list",
@@ -122,10 +118,8 @@ function optionsAsk() {
             });
         }
         else {
-            // Fills in HTML document
             const HTMLContent = template.generateHTML(manager, engineers, interns);
 
-            // Writes HTML file
             fs.writeFile(`./dist/index.html`, HTMLContent, (error) =>
                 error ? console.log(error) : console.log("Generating HTML...")
             );

@@ -1,5 +1,3 @@
-// Invoke npm test Manager to use this test
-
 const Manager = require("../lib/Manager");
 
 describe("Manager subclass", () => {
