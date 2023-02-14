@@ -12,7 +12,7 @@ to install youll need to clone the repository. make sure you already have Node.j
 
 this the the link to my video running through the application 
 
-[youtube](www.youtube.com)
+[youtube](https://youtu.be/Ahu_GUHyf1w)
 
 
 ## Tests
